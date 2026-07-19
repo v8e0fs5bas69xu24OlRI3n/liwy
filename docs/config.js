@@ -126,7 +126,7 @@ const LANDER_CONFIG = {
 
             label: "Buy now",
 
-            price: "$1,995",
+            price: "$500,000",
 
             url: "https://example.com/buy"
 
@@ -138,7 +138,7 @@ const LANDER_CONFIG = {
 
             label: "Lease to own",
 
-            price: "$99",
+            price: "20,000",
 
             subtitle: "24 monthly payments",
 
