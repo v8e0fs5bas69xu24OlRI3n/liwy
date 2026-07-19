@@ -204,17 +204,17 @@ body{
    HERO
 ========================== */
 
-.hero{
+.hero {
 
-    flex:1;
+    display: flex;
 
-    display:flex;
+    justify-content: center;
 
-    justify-content:center;
+    align-items: center;
 
-    align-items:center;
+    padding: 20px 0;
 
-    min-height:0;
+    flex: 0 1 auto;
 
 }
 
