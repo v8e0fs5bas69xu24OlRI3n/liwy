@@ -1,194 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <meta
-        name="description"
-        content="Premium domain for sale">
+<title>Domain For Sale</title>
 
-    <meta
-        name="theme-color"
-        content="#3b4dff">
+<style>
 
-    <title>Domain For Sale</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <link
-        rel="icon"
-        href="favicon.ico">
+html,body{
+    height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
 
-    <!-- Google Font -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com">
+body{
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    background:
+    linear-gradient(180deg,#18245d 0%,#3026b5 100%);
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    color:white;
 
-    <link
-        rel="stylesheet"
-        href="test.css">
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.wrapper{
+
+    width:100%;
+
+    max-width:520px;
+
+    min-height:100dvh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:24px;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    margin-bottom:28px;
+
+}
+
+.domain{
+
+    font-size:clamp(2.3rem,8vw,3.5rem);
+
+    font-weight:900;
+
+    letter-spacing:-1px;
+
+}
+
+.subtitle{
+
+    margin-top:10px;
+
+    font-size:1.2rem;
+
+    color:#d9ddff;
+
+}
+
+.card{
+
+    background:#171922;
+
+    border-radius:26px;
+
+    padding:24px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.35);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.option{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#1f2230;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.option:hover{
+
+    background:#25293b;
+
+}
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.option input{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.title{
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+}
+
+.price{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:#8eb9ff;
+
+}
+
+.small{
+
+    display:block;
+
+    color:#b9bfd7;
+
+    font-size:.9rem;
+
+    margin-top:5px;
+
+}
+
+.payments{
+
+    text-align:center;
+
+}
+
+.payments h3{
+
+    margin-bottom:12px;
+
+    color:#d8ddff;
+
+}
+
+.icons{
+
+    color:#9fb7ff;
+
+    line-height:1.8;
+
+}
+
+button{
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(90deg,#4e5cff,#2797ff);
+
+    color:white;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    opacity:.95;
+
+}
+
+.footer{
+
+    margin-top:14px;
+
+    text-align:center;
+
+    color:#b9bfd7;
+
+    font-size:.95rem;
+
+}
+
+/* Keeps everything visible */
+
+@media (max-height:720px){
+
+.hero{
+
+    margin-top:20px;
+
+    margin-bottom:18px;
+
+}
+
+.domain{
+
+    font-size:2rem;
+
+}
+
+.card{
+
+    padding:18px;
+
+    gap:16px;
+
+}
+
+.option{
+
+    padding:14px;
+
+}
+
+.price{
+
+    font-size:1.7rem;
+
+}
+
+button{
+
+    height:52px;
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="background">
+<div class="wrapper">
 
-    <div class="blob blob-one"></div>
+<div class="hero">
 
-    <div class="blob blob-two"></div>
+<div class="domain">
+
+MYDOMAIN.COM
 
 </div>
 
+<div class="subtitle">
 
+is for sale
 
-<main class="page">
+</div>
 
-    <!-- ================= HERO ================= -->
+</div>
 
-    <section class="hero">
+<div class="card">
 
-        <div class="glass">
+<label class="option">
 
-            <img
-                id="logo"
-                class="logo"
-                src=""
-                alt="Logo">
+<div class="left">
 
-            <p
-                id="heroTitle"
-                class="hero-title">
-            </p>
+<input
+type="radio"
+name="purchase"
+value="buy"
+checked>
 
-            <h1
-                id="domain"
-                class="domain">
-            </h1>
+<div>
 
-            <div
-                id="features"
-                class="features">
-            </div>
+<div class="title">
 
-        </div>
+Buy now
 
-    </section>
+</div>
 
+</div>
 
-    <!-- ================= PURCHASE CARD ================= -->
+</div>
 
-    <section class="purchase-card">
+<div class="price">
 
-        <form id="purchaseForm">
+$1,995
 
-</form>
+</div>
 
+</label>
 
+<label class="option">
 
-        <!-- Payment Methods -->
+<div class="left">
 
-        <section class="payments">
+<input
+type="radio"
+name="purchase"
+value="lease">
 
-            <h3>
+<div>
 
-                Accepted payments
+<div class="title">
 
-            </h3>
+Lease to own
 
-            <div
-                id="paymentIcons"
-                class="payment-icons">
-            </div>
+</div>
 
-        </section>
+</div>
 
+</div>
 
+<div style="text-align:right;">
 
-        <!-- Continue -->
+<div class="price">
 
-        <button
-            id="continueButton"
-            type="button"
-            disabled>
+$99
 
-            <span
-                id="buttonText">
-                Continue
-            </span>
+</div>
 
-            <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24">
+<span class="small">
 
-                <path
-                    d="M5 12H19M13 6L19 12L13 18"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"/>
+24 monthly payments
 
-            </svg>
+</span>
 
-        </button>
+</div>
 
+</label>
 
+<div class="payments">
 
-        <!-- Trust -->
+<h3>
 
-        <section class="trust">
+Accepted payments
 
-            <div class="trust-header">
+</h3>
 
-                🔒
+<div class="icons">
 
-                <span
-                    id="trustHeading">
-                </span>
+Visa • Mastercard • Apple Pay • Google Pay • PayPal
 
-            </div>
+</div>
 
-            <div
-                id="trustItems"
-                class="trust-items">
-            </div>
+</div>
 
-        </section>
+<button id="continue">
 
+Continue →
 
+</button>
 
-        <!-- Footer -->
+<div class="footer">
 
-        <footer
-            id="footer"
-            class="footer">
-        </footer>
+🔒 Secure escrow transaction
 
-    </section>
+</div>
 
-</main>
+</div>
 
+</div>
 
+<script>
 
-<script src="config.js"></script>
+const BUY_URL="https://example.com/buy";
 
-<script src="test.js"></script>
+const LEASE_URL="https://example.com/lease";
+
+document
+.getElementById("continue")
+.onclick=function(){
+
+const selected=document.querySelector(
+'input[name="purchase"]:checked'
+).value;
+
+window.location.href=
+selected==="buy"
+?BUY_URL
+:LEASE_URL;
+
+};
+
+</script>
 
 </body>
-
-  </html>
+</html>
