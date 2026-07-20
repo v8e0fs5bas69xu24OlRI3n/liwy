@@ -175,9 +175,14 @@ body{
 
 .payments{
 
-    text-align:center;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:12px;
 
 }
 
@@ -406,13 +411,11 @@ $99
 Accepted payments
 
 </h3>
-<div>
     <img
         src="payment-methods.png"
         alt="Payment methods"
         title="Payment methods"
         class="payment-image">
-</div>
 </div>
 
 <button id="continue">
