@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Domain For Sale</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(180deg,#18245d 0%,#3026b5 100%);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.wrapper{
+
+    width:100%;
+
+    max-width:520px;
+
+    min-height:100dvh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px 10px 24px;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    margin-bottom:28px;
+
+}
+
+.domain{
+
+    font-size:clamp(2.3rem,8vw,3.5rem);
+
+    font-weight:900;
+
+    letter-spacing:-1px;
+
+}
+
+.subtitle{
+
+    margin-top:10px;
+
+    font-size:1.2rem;
+
+    color:#d9ddff;
+
+}
+
+.card{
+
+    background:#171922;
+
+    border-radius:26px;
+
+    padding:24px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.35);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.option{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#1f2230;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.option:hover{
+
+    background:#25293b;
+
+}
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.option input{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.title{
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+}
+
+.price{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:#8eb9ff;
+
+}
+
+.small{
+
+    display:block;
+
+    color:#b9bfd7;
+
+    font-size:.9rem;
+
+    margin-top:5px;
+
+}
+
+.payments{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+}
+
+.payment-image{
+
+    width:100%;
+
+    max-width:340px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    cursor:help;
+
+    transition:.25s;
+
+}
+
+.payment-image:hover{
+
+    transform:scale(1.02);
+
+}
+
+.payments h3{
+
+    margin:0;
+
+    color:#d8ddff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.icons{
+
+    color:#9fb7ff;
+
+    line-height:1.8;
+
+}
+
+button{
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(90deg,#4e5cff,#2797ff);
+
+    color:white;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    opacity:.95;
+
+}
+
+.footer{
+
+    margin-top:14px;
+
+    text-align:center;
+
+    color:#b9bfd7;
+
+    font-size:.95rem;
+
+}
+
+/* Keeps everything visible */
+
+@media (max-height:720px){
+
+.hero{
+
+    margin-top:0px;
+
+    margin-bottom:18px;
+
+}
+
+.domain{
+
+    font-size:2rem;
+
+}
+
+.card{
+
+    padding:18px;
+
+    gap:16px;
+
+}
+
+.option{
+
+    padding:14px;
+
+}
+
+.price{
+
+    font-size:1.7rem;
+
+}
+
+button{
+
+    height:52px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="hero">
+
+<div class="domain">
+
+MYDOMAIN.COM
+
+</div>
+
+<div class="subtitle">
+
+is for sale
+
+</div>
+
+</div>
+
+<div class="card">
+
+<label class="option">
+
+<div class="left">
+
+<input
+type="radio"
+name="purchase"
+value="buy"
+checked>
+
+<div>
+
+<div class="title">
+
+Buy now
+
+</div>
+
+</div>
+
+</div>
+
+<div class="price">
+
+$500,000
+
+</div>
+
+</label>
+
+<label class="option">
+
+<div class="left">
+
+<input
+type="radio"
+name="purchase"
+value="lease">
+
+<div>
+
+<div class="title">
+
+Lease to own
+
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align:right;">
+
+<div class="price">
+
+$15000
+
+</div>
+
+<span class="small">
+
+24 monthly payments
+
+</span>
+
+</div>
+
+</label>
+
+<div class="payments">
+
+<h3>
+
+Accepted payments
+
+</h3>
+    <img
+        src="payment-methods.png"
+        alt="Payment methods"
+        title="Payment methods"
+        class="payment-image">
+</div>
+
+<button id="continue">
+
+Continue →
+
+</button>
+
+<div class="footer">
+
+🔒 Secure escrow transaction
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const BUY_URL="https://example.com/buy";
+
+const LEASE_URL="https://example.com/lease";
+
+document
+.getElementById("continue")
+.onclick=function(){
+
+const selected=document.querySelector(
+'input[name="purchase"]:checked'
+).value;
+
+window.location.href=
+selected==="buy"
+?BUY_URL
+:LEASE_URL;
+
+};
+
+</script>
+
+</body>
+</html>
