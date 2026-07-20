@@ -173,6 +173,16 @@ body{
 
 }
 
+.payment-strip{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
 .payments{
 
     text-align:center;
@@ -383,9 +393,43 @@ Accepted payments
 
 </h3>
 
-<div class="icons">
+<div class="payments">
 
-Visa • Mastercard • Apple Pay • Google Pay • PayPal
+    <img
+    src="images/payment-methods.png"
+    alt="Visa, Mastercard, American Express, Discover, Diners Club, JCB, UnionPay, Bitcoin, PayPal, Apple Pay, Google Pay, Alipay"
+    class="payment-strip"
+    usemap="#paymentmap"
+    width="1536"
+    height="424">
+
+    <map name="paymentmap">
+
+        <area shape="rect" coords="0,0,125,110" title="Visa">
+
+        <area shape="rect" coords="125,0,250,110" title="Mastercard">
+
+        <area shape="rect" coords="250,0,375,110" title="American Express">
+
+        <area shape="rect" coords="375,0,500,110" title="Discover">
+
+        <area shape="rect" coords="500,0,625,110" title="Diners Club">
+
+        <area shape="rect" coords="625,0,750,110" title="JCB">
+
+        <area shape="rect" coords="750,0,875,110" title="UnionPay">
+
+        <area shape="rect" coords="875,0,1000,110" title="Bitcoin">
+
+        <area shape="rect" coords="1000,0,1125,110" title="PayPal">
+
+        <area shape="rect" coords="1125,0,1250,110" title="Apple Pay">
+
+        <area shape="rect" coords="1250,0,1375,110" title="Google Pay">
+
+        <area shape="rect" coords="1375,0,1500,110" title="Alipay">
+
+    </map>
 
 </div>
 
@@ -428,6 +472,16 @@ selected==="buy"
 
 };
 
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    imageMapResize();
+
+});
 </script>
 
 </body>
