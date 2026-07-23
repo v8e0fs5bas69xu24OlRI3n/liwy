@@ -1,3 +1,5 @@
+document.title = `${CONFIG.domain} is for sale`;
+
 const css = `
 
 /* Paste ALL of your CSS here exactly as it is */
