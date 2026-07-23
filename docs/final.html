@@ -348,58 +348,95 @@ button{
 
 <div class="hero">
 
-    <div class="domain" id="domain"></div>
+<div class="domain" id="domain"></div>
 
-    <div class="subtitle" id="subtitle"></div>
+<div class="subtitle" id="subtitle"></div>
 
 </div>
 
 <div class="card">
 
-    <div id="purchaseOptions"></div>
+<label class="option">
 
-    <div class="payments">
+<div class="left">
 
-        <h3>Accepted payments</h3>
+<input
+type="radio"
+name="purchase"
+value="buy"
+checked>
 
-        <img
-            id="paymentImage"
-            class="payment-image">
+<div>
 
-    </div>
+<div class="boxtext">
 
-    <button id="continue"></button>
+Buy now
 
-    <div id="escrow" class="footer"></div>
+</div>
 
 </div>
 
 </div>
 
-<script>
+<div class="price" id="buyPrice"></div>
 
-const BUY_URL="https://example.com/buy";
+</label>
 
-const LEASE_URL="https://example.com/lease";
+<label class="option">
 
-document
-.getElementById("continue")
-.onclick=function(){
+<div class="left">
 
-const selected=document.querySelector(
-'input[name="purchase"]:checked'
-).value;
+<input
+type="radio"
+name="purchase"
+value="lease">
 
-window.location.href=
-selected==="buy"
-?BUY_URL
-:LEASE_URL;
+<div>
 
-};
+<div class="boxtext">
 
-</script>
+Lease to own
+
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align:right;">
+
+<div class="price" id="leasePrice"></div>
+
+<span class="small" id="leaseText"></span>
+
+</div>
+
+</label>
+
+<div class="payments">
+
+<h3>
+
+Accepted payments
+
+</h3>
+    <img
+    id="paymentImage"
+    class="payment-image"
+    alt="Payment methods"
+    title="Payment methods">
+</div>
+
+<button id="continue"></button>
+
+<div class="footer" id="escrow"></div>
+
+</div>
+
+</div>
 
 <script src="config.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

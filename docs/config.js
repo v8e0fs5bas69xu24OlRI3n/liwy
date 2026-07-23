@@ -4,31 +4,20 @@ const CONFIG = {
 
     subtitle: "is for sale",
 
+    buyPrice: "$500,000",
+
+    leasePrice: "$15,000",
+
+    leaseText: "p.m. x 24",
+
     paymentImage: "payment-methods.png",
 
-    continueText: "Continue →",
+    continueButton: "Continue →",
 
     escrowText: "🔒 Secure escrow transaction",
 
-    options: [
+    buyUrl: "https://example.com/buy",
 
-        {
-            id: "buy",
-            text: "Buy now",
-            price: "$500,000",
-            checked: true,
-            url: "https://example.com/buy"
-        },
-
-        {
-            id: "lease",
-            text: "Lease to own",
-            price: "$15,000",
-            small: "p.m. x 24",
-            checked: false,
-            url: "https://example.com/lease"
-        }
-
-    ]
+    leaseUrl: "https://example.com/lease"
 
 };
