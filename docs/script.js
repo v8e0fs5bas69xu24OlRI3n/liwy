@@ -332,6 +332,104 @@ button{
 
 `;
 
+document.body.innerHTML = `
+
+/* Paste ALL of your HTML here exactly as it is */
+
+<div class="wrapper">
+
+<div class="hero">
+
+<div class="domain" id="domain"></div>
+
+<div class="subtitle" id="subtitle"></div>
+
+</div>
+
+<div class="card">
+
+<label class="option">
+
+<div class="left">
+
+<input
+type="radio"
+name="purchase"
+value="buy"
+checked>
+
+<div>
+
+<div class="boxtext">
+
+Buy now
+
+</div>
+
+</div>
+
+</div>
+
+<div class="price" id="buyPrice"></div>
+
+</label>
+
+<label class="option">
+
+<div class="left">
+
+<input
+type="radio"
+name="purchase"
+value="lease">
+
+<div>
+
+<div class="boxtext">
+
+Lease to own
+
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align:right;">
+
+<div class="price" id="leasePrice"></div>
+
+<span class="small" id="leaseText"></span>
+
+</div>
+
+</label>
+
+<div class="payments">
+
+<h3>
+
+Accepted payments
+
+</h3>
+    <img
+    id="paymentImage"
+    class="payment-image"
+    alt="Payment methods"
+    title="Payment methods">
+</div>
+
+<button id="continue"></button>
+
+<div class="footer" id="escrow"></div>
+
+</div>
+
+</div>
+
+/* ...continue by pasting the rest of your HTML here... */
+`;
+
 const style = document.createElement("style");
 style.textContent = css;
 document.head.appendChild(style);
