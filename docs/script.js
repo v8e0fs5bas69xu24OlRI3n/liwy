@@ -1,3 +1,341 @@
+const css = `
+
+/* Paste ALL of your CSS here exactly as it is */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(180deg,#18245d 0%,#3026b5 100%);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.wrapper{
+
+    width:100%;
+
+    max-width:520px;
+
+    min-height:100dvh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:0 10px 20px;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding-top:10px;      /* Space above the domain */
+    margin-bottom:10px;    /* Space between hero and card */
+
+}
+
+.domain{
+
+    font-size:clamp(2.3rem,8vw,3.5rem);
+
+    font-weight:900;
+
+    letter-spacing:-1px;
+
+}
+
+.subtitle{
+
+    margin-top:10px;
+
+    font-size:1.2rem;
+
+    color:#d9ddff;
+
+}
+
+.card{
+
+    background:#171922;
+
+    border-radius:26px;
+
+    padding:20px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.35);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.option{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:#1f2230;
+
+    cursor:pointer;
+
+    transition:.2s;
+    
+    user-select:none;
+
+}
+
+.option:hover{
+
+    background:#25293b;
+
+}
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.option input{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.title{
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+}
+
+.boxtext{
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+}
+
+
+.price{
+
+    font-size:2.0rem;
+
+    font-weight:bold;
+
+    color:#8eb9ff;
+
+}
+
+.small{
+
+    display:block;
+
+    color:#b9bfd7;
+
+    font-size:.9rem;
+
+    margin-top:5px;
+
+}
+
+.payments{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+}
+
+.payment-image{
+
+    width:100%;
+
+    max-width:340px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    cursor:help;
+
+    transition:.25s;
+
+}
+
+.payment-image:hover{
+
+    transform:scale(1.02);
+
+}
+
+.payments h3{
+
+    margin:0;
+
+    color:#d8ddff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.icons{
+
+    color:#9fb7ff;
+
+    line-height:1.8;
+
+}
+
+button{
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(90deg,#4e5cff,#2797ff);
+
+    color:white;
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+    
+    transition:.2s;
+
+}
+
+button:hover{
+
+    opacity:.95;
+    
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(78,92,255,.35);
+
+}
+
+.footer{
+
+    text-align:center;
+
+    color:#b9bfd7;
+
+    font-size:.95rem;
+
+}
+
+/* Keeps everything visible */
+
+@media (max-height:720px){
+
+.hero{
+
+    margin-top:10px;
+
+    margin-bottom:18px;
+
+}
+
+.domain{
+
+    font-size:2rem;
+
+}
+
+.card{
+
+    padding:18px;
+
+    gap:16px;
+
+}
+
+.option{
+
+    padding:14px;
+
+}
+
+.boxtext{
+
+    font-size:0.8rem;
+
+    font-weight:bold;
+
+}
+
+.price{
+
+    font-size:1.2rem;
+
+}
+
+.small{
+
+    font-size:.7rem;
+
+    margin-top:3px;
+
+}
+
+button{
+
+    height:52px;
+
+}
+
+}
+/* ...continue by pasting the rest of your CSS here... */
+
+`;
+
+const style = document.createElement("style");
+style.textContent = css;
+document.head.appendChild(style);
+
 // Populate page content
 document.getElementById("domain").textContent = CONFIG.domain;
 document.getElementById("subtitle").textContent = CONFIG.subtitle;
