@@ -334,7 +334,7 @@ button{
 
 document.body.innerHTML = `
 
-/* Paste ALL of your HTML here exactly as it is */
+<!-- Paste ALL of your HTML here exactly as it is -->
 
 <div class="wrapper">
 
@@ -427,7 +427,7 @@ Accepted payments
 
 </div>
 
-/* ...continue by pasting the rest of your HTML here... */
+<!-- ...continue by pasting the rest of your HTML here... -->
 `;
 
 const style = document.createElement("style");
