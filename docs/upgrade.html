@@ -138,12 +138,69 @@ body{
 
 .option input{
 
+   /* width:22px;
+
+    height:22px;*/
+    
+    display:none;
+
+}
+
+/**/
+.radio{
+
     width:22px;
 
     height:22px;
 
+    border:2px solid #8ea2ff;
+
+    border-radius:50%;
+
+    position:relative;
+
+    flex-shrink:0;
+
+    transition:.2s;
+
 }
 
+.radio::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#4e5cff;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    transition:.2s;
+
+}
+
+.option input:checked + .radio{
+
+    border-color:#4e5cff;
+
+}
+
+.option input:checked + .radio::after{
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+/**/
 .title{
 
     font-size:1.2rem;
@@ -374,6 +431,8 @@ name="purchase"
 value="buy"
 checked>
 
+<span class="radio"></span>
+
 <div>
 
 <div class="boxtext">
@@ -402,6 +461,8 @@ $500,000
 type="radio"
 name="purchase"
 value="lease">
+
+<span class="radio"></span>
 
 <div>
 
