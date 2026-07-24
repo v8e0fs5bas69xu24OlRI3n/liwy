@@ -1,5 +1,9 @@
 document.title = `${CONFIG.domain} is for sale`;
 
+fitDomainText();
+
+window.addEventListener("resize", fitDomainText);
+
 const css = `
 
 /* Paste ALL of your CSS here exactly as it is */
@@ -52,13 +56,16 @@ body{
 
 }
 
+
 .domain{
 
-    font-size:clamp(2.3rem,8vw,3.5rem);
+    font-size:3.5rem;
 
     font-weight:900;
 
     letter-spacing:-1px;
+
+    white-space:nowrap;
 
 }
 
@@ -472,3 +479,25 @@ document.getElementById("continue").addEventListener("click", function () {
     }
 
 });
+
+function fitDomainText() {
+
+    const domain = document.getElementById("domain");
+
+    let fontSize = window.matchMedia("(max-height:720px)").matches
+        ? 2
+        : 3.5;      
+        // Maximum size (rem) respecting mediaqueries
+    const minSize = 1.4;     // Don't go smaller than this
+
+    domain.style.fontSize = fontSize + "rem";
+    domain.style.whiteSpace = "nowrap";
+
+    while (domain.scrollWidth > domain.clientWidth && fontSize > minSize) {
+
+        fontSize -= 0.05;
+        domain.style.fontSize = fontSize + "rem";
+
+    }
+
+}
