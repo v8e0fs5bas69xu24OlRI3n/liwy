@@ -14,8 +14,4 @@ const CONFIG = {
 
     escrowText: "🔒 Secure escrow transaction",
 
-    buyUrl: "https://example.com/buy",
-
-    leaseUrl: "https://example.com/lease"
-
 };

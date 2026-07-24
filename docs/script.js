@@ -2,6 +2,10 @@ const domain = window.location.hostname.replace(/^www\./, "");
 
 document.title = `${domain} is for sale`;
 
+const BUY_URL = `buy.html`;
+
+const LEASE_URL = `lease.html`;
+
 const css = `
 
 /* Paste ALL of your CSS here exactly as it is */
@@ -475,11 +479,11 @@ document.getElementById("continue").addEventListener("click", function () {
 
     if (selected.value === "buy") {
 
-        window.location.href = CONFIG.buyUrl;
+        window.location.href = BUY_URL;
 
     } else {
 
-        window.location.href = CONFIG.leaseUrl;
+        window.location.href = LEASE_URL;
 
     }
 
