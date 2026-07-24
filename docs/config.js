@@ -1,6 +1,6 @@
 const CONFIG = {
 
-    domain: "AWX.NET",
+    domain: "INVESTMENTASSOCIATION.COM",
 
     subtitle: "is for sale",
 
