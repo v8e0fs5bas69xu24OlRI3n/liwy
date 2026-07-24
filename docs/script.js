@@ -1,9 +1,5 @@
 document.title = `${CONFIG.domain} is for sale`;
 
-fitDomainText();
-
-window.addEventListener("resize", fitDomainText);
-
 const css = `
 
 /* Paste ALL of your CSS here exactly as it is */
@@ -445,6 +441,11 @@ document.head.appendChild(style);
 
 // Populate page content
 document.getElementById("domain").textContent = CONFIG.domain;
+
+fitDomainText();
+
+window.addEventListener("resize", fitDomainText);
+
 document.getElementById("subtitle").textContent = CONFIG.subtitle;
 
 document.getElementById("buyPrice").textContent = CONFIG.buyPrice;
