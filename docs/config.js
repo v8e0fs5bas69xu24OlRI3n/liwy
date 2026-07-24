@@ -1,6 +1,6 @@
 const CONFIG = {
 
-    domain: "MYDOMAIN.COM",
+    domain: "INVESTMENTASSOCIATION.COM",
 
     subtitle: "is for sale",
 
