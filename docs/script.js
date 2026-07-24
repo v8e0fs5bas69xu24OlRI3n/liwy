@@ -489,15 +489,16 @@ function fitDomainText() {
         ? 2
         : 3.5;      
         // Maximum size (rem) respecting mediaqueries
-    const minSize = 1.4;     // Don't go smaller than this
+    const minSize = 1.2;     // Don't go smaller than this
 
     domain.style.fontSize = fontSize + "rem";
     domain.style.whiteSpace = "nowrap";
 
     while (domain.scrollWidth > domain.clientWidth && fontSize > minSize) {
 
-        fontSize -= 0.05;
+        fontSize -= 0.02;
         domain.style.fontSize = fontSize + "rem";
+        // Deincrement value
 
     }
 
