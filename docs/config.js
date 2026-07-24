@@ -1,7 +1,5 @@
 const CONFIG = {
 
-    domain: "AWX.ORG",
-
     subtitle: "is for sale",
 
     buyPrice: "$500,000",

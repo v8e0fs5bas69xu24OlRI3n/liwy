@@ -1,4 +1,6 @@
-document.title = `${CONFIG.domain} is for sale`;
+const domain = window.location.hostname.replace(/^www\./, "");
+
+document.title = `${domain} is for sale`;
 
 const css = `
 
@@ -54,6 +56,8 @@ body{
 
 
 .domain{
+
+    text-transform: uppercase;
 
     font-size:3.5rem;
 
@@ -440,7 +444,7 @@ style.textContent = css;
 document.head.appendChild(style);
 
 // Populate page content
-document.getElementById("domain").textContent = CONFIG.domain;
+document.getElementById("domain").textContent = domain;
 
 fitDomainText();
 
